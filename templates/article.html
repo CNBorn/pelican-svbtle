@@ -5,7 +5,7 @@
                 <h1 class="title">
                         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">{{ article.title }}</a>
                 </h1>
-                <div class="abbr published" title='{{ article.date.isoformat() }}'>Posted {{ article.locale_date }} by {{ article.author }} </div>
+                <div class="abbr published" title='{{ article.date.isoformat() }}'>{{ article.locale_date }} by {{ article.author }} </div>
 
                 <div class='article-content'>
                     {{ article.content }}
