@@ -2,13 +2,13 @@
 
 Modifications:
 
-    * Date/Author Info under article title
-    * Use Biscuss instead of Disqus
+- Date/Author Info under article title
+- Use Biscuss instead of Disqus
 
 Hosting:
 
-    * [Code](http://code.dapps.douban.com/pelican-svbtle) (master branch)
-    * [Github](https://github.com/CNBorn/pelican-svbtle/tree/code-blog) (code-blog branch)
+- [Code](http://code.dapps.douban.com/pelican-svbtle) (master branch)
+- [Github](https://github.com/CNBorn/pelican-svbtle/tree/code-blog) (code-blog branch)
 
 # SVBTLE tweaked
 
