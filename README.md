@@ -8,7 +8,7 @@ Then [responsive adaptations](https://github.com/CNBorn/pelican-svbtle/tree/resp
 
 Reorganized by [James Cooke](https://github.com/jamescooke).
 
-This is a adaptations specified for [Tyler Xing's Blog](http://cnborn.net).
+This is a adaptation specified for [Tyler Xing's Blog](http://cnborn.net).
 
 ### FROM OFFICIAL REPO
 
