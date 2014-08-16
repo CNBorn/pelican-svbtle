@@ -1,13 +1,14 @@
-# SVBTLE tweaked
+# Pelican-svbtle
 
 This theme is a copy of a copy and is based on [Svbtle.com](http://www.svbtle.com).
 
 Originally ported to [Pelican](http://pelican.notmyidea.org) by [William Ting](https://github.com/wting/) - download the [repository](https://github.com/wting/pelican-svbtle) or read the original [README file](https://github.com/wting/pelican-svbtle#readme).
 
-Then [responsive adaptations](https://github.com/CNBorn/pelican-svbtle/tree/responsive) were made by [Tyler Xing](https://github.com/CNBorn).
+Then [responsive adaptations](https://github.com/CNBorn/pelican-svbtle/tree/responsive) were made by [Tyler Xing(me)](https://github.com/CNBorn).
 
-I merged the responsive branch into master and made some small changes of my own.
+Reorganized by [James Cooke](https://github.com/jamescooke).
 
+This is a adaptations specified for [Tyler Xing's Blog](http://cnborn.net).
 
 ### FROM OFFICIAL REPO
 
