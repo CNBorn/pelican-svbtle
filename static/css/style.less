@@ -109,12 +109,6 @@ a {
         font-size: 0.75em;
 }
 
-.article-content {
-        p, ul, ol {
-                width: 70%;
-        }
-}
-
 section#navbar {
         width: 100%;
         display: none;
@@ -244,6 +238,14 @@ section#sidebar {
 }
 
 @media screen and (min-width: 880px) {
+    article {
+        padding: 2em 1em 2em 2em;
+    }
+     .article-content {
+        p, ul, ol {
+            width: 70%;
+        }
+     }
      section#posts {
          margin-left:25%;
          width: 74%;
@@ -447,7 +449,6 @@ section#posts {
 
         article {
                 margin: 0;
-                padding: 2em 1em 2em 2em;
                 position: relative;
                 font-size: @normal_text_size;
                 line-height: @normal_text_line-height;
