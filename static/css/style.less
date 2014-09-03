@@ -255,6 +255,10 @@ section#sidebar {
          max-width: 1024px;
          background-color: rgba(255,255,255,.9);
          border-left: @light-grey 1px solid;
+
+         h1 {
+             margin: 1.5em 0 0.75em;
+         }
      }
      section#posts a.button_accent {
          margin: 2em;
@@ -278,6 +282,11 @@ section#sidebar {
          margin-left: 0;
          width: 99%;
          background-color: white;
+         
+         h1 {
+             margin: .5em 0 0.75em;
+         }
+
      }
      .entry-content {
          p, ul, ol {
@@ -312,7 +321,6 @@ section#posts {
         line-height: 100%;
 
         h1 {
-                margin: 1.5em 0 0.75em;
                 color: @black;
                 font-size: 1.65em;
                 line-height: 130%;
@@ -350,12 +358,17 @@ section#posts {
                 list-style-position: outside;
 
                 li {
-                        margin: 0 0 1px 15px;
-                        padding: 3px 0 3px 5px;
+                    margin: 0 0 1px 15px;
+                    padding: 3px 0 3px 5px;
+                    
+                    p {
+                        margin: 0.5em 0em;
+                    }
+                    
                 }
 
                 pre {
-                        width: 100%;
+                    width: 100%;
                 }
         }
 
