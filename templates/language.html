@@ -1,14 +1,17 @@
 {% extends "base.html" %}
+
 {% block content_title %}
-<h2>Articles in the {{ language }} </h2>
+<h2 class="title">{{ language }}</h2>
 {% endblock %}
 
 {% block content %}
-<dl>
-{% for article in dates %}
+<ul class="article-list">
+  {% for article in dates %}
+  <li>
     <dt>{{ article.locale_date }}</dt>
     <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+  </li>
 {% endfor %}
-</dl>
+</ul>
 {% endblock %}
 
