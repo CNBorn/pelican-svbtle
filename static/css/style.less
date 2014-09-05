@@ -16,6 +16,8 @@
 
 @padding_for_content_part: 2em 1em 2em;
 
+@min-height: 600px;
+
 html {
     min-height: 100%;
     margin: 0;
@@ -166,7 +168,7 @@ section#sidebar {
     left: 0;
     bottom: 0;
     right: auto;
-    min-height: 700px;
+    min-height: @min-height;
     z-index: 0;
     position: fixed;
 
@@ -190,44 +192,43 @@ section#sidebar {
         font-weight: 300;
     }
 
-        ul {
-                margin: 50px 0 0 0;
-                padding: 0 0 0 40px;
+    ul {
+        margin: 0;
+        padding: 2.5em 0 0 2em;
+    }
+
+    li {
+        margin: 0 0 0.3em;
+        float:left;
+        clear: both;
+        display: block;
+        
+        a {
+            color: @med-grey;
+            font-size: @button_link_size;
+            line-height: 100%;
+            border: @button_link_border solid @light-grey;
+            .border-radius(3em);
+            padding: 0.5em 1em;
+            display: block;
+
+            &:hover {
+                color: @accent;
+                border: @button_link_border solid @accent;
+            }
         }
+    }
 
-        li {
-                margin: 0 0 0.3em;
-                float:left;
-                clear: both;
-                display: block;
+    footer {
+        margin: 0;
+        padding-left: 1em;
+        position: absolute;
+        bottom: 1em;
 
-                a {
-                        color: @med-grey;
-                        font-size: @button_link_size;
-                        line-height: 100%;
-                        border: @button_link_border solid @light-grey;
-                        .border-radius(3em);
-                        padding: 0.5em 1em;
-                        display: block;
-
-                &:hover {
-                        color: @accent;
-                        border: @button_link_border solid @accent;
-                }
-
-                }
-        }
-
-        footer {
-                margin: 0 0 0 10px;
-                padding: 0;
-                position: absolute;
-                bottom: 1em;
-
-                color: @med-grey;
-                font-size: 0.75em;
-                font-weight: 300;
-        }
+        color: @med-grey;
+        font-size: 0.75em;
+        font-weight: 300;
+    }
 }
 
 @media screen and (min-width: 880px) {
@@ -245,7 +246,7 @@ section#sidebar {
      section#posts {
          margin-left:25%;
          width: 74%;
-         min-height: 700px;
+         min-height: @min-height;
          max-width: 1024px;
          background-color: rgba(255,255,255,.9);
          border-left: @light-grey 1px solid;
