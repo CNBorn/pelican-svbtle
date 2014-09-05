@@ -252,6 +252,7 @@ section#sidebar {
      section#posts {
          margin-left:25%;
          width: 74%;
+         min-height: 700px;
          max-width: 1024px;
          background-color: rgba(255,255,255,.9);
          border-left: @light-grey 1px solid;
@@ -368,7 +369,6 @@ section#sidebar {
 section#posts {
     top: 0;
     float:left;
-    min-height: 700px;
     height: 100%;
     position: relative;
     z-index: 1;
@@ -393,11 +393,9 @@ section#posts {
 
         li {
             margin: 0 0 0 .5em;
-
             p {
                 margin: 0.5em 0em;
             }
-            
         }
 
         pre {
@@ -405,16 +403,16 @@ section#posts {
         }
     }
 
-        blockquote {
-                margin: 0;
-                padding: 0 0 0 30px;
-                display: inline-block;
-                border-left: 20px solid @accent;
-                max-width: 100%;
-                p {
-                    width: 100%;
-                }
+    blockquote {
+        margin: 0;
+        padding: 0 0 0 30px;
+        display: inline-block;
+        border-left: 20px solid @accent;
+        max-width: 100%;
+        p {
+            width: 100%;
         }
+    }
 
         code {
                 margin: 0;
