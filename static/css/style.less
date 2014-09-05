@@ -299,22 +299,49 @@ section#sidebar {
 }
 
 @media screen and (max-width: 880px) {
-     section#sidebar {
-         display: none;
-     }
-     section#navbar {
-         display: block;
-     }
-     section#posts {
-         margin-left: 0;
-         width: 99%;
-         background-color: white;
-         
-         h1 {
-             margin: .5em 0 0.75em;
-         }
+    section#sidebar {
+        display: none;
+    }
+    section#navbar {
+        display: block;
+    }
+    section#posts {
+        margin-left: 0;
+        width: 99%;
+        background-color: white;
+        
+        h1 {
+            margin: .5em 0 0.75em;
+        }
 
-     }
+        h2.title { 
+            margin: 1.5em 0 0.25em 1em;
+        }
+
+        ul.article-list{
+            padding: 1em;
+            
+            li {
+                line-height: 2em;
+                display: block;
+            }
+
+            dt, dd {
+                display: inline;
+            }
+
+            dt {
+                color: @med-grey;
+                font-weight: lighter;
+                font-size: small;
+            }
+            
+            dd {
+                margin-left: 1em;
+            }
+            
+        }
+    }
      .entry-content {
          p, ul, ol {
              width: 100%;
@@ -358,46 +385,25 @@ section#posts {
         font-size: 1.35em;
         line-height: 110%;
     }
+    
+    ul, ol {
+        margin: 0 0 0 .25em;
+        padding: 0;
+        list-style-position: outside;
 
-        h3 {
-                margin: 22px 0 12px;
-                color: @black;
+        li {
+            margin: 0 0 0 .5em;
+
+            p {
+                margin: 0.5em 0em;
+            }
+            
         }
 
-        h4 {
-                margin: 20px 0 10px;
-                color: @black;
+        pre {
+            width: 100%;
         }
-
-        h5 {
-                margin: 20px 0 10px;
-                color: @black;
-        }
-
-        h6 {
-                margin: 20px 0 10px;
-                color: @black;
-        }
-
-        ul, ol {
-                margin: 0 0 0 15px;
-                padding: 0;
-                list-style-position: outside;
-
-                li {
-                    margin: 0 0 1px 15px;
-                    padding: 3px 0 3px 5px;
-                    
-                    p {
-                        margin: 0.5em 0em;
-                    }
-                    
-                }
-
-                pre {
-                    width: 100%;
-                }
-        }
+    }
 
         blockquote {
                 margin: 0;
