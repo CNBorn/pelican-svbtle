@@ -227,64 +227,56 @@ section#sidebar {
 }
 
 @media screen and (min-width: 880px) {
-    article {
-        padding: 2em 1em 2em 2em;
-    }
-     .article-content {
-        p, ul, ol {
+    section#posts {
+        margin-left:25%;
+        min-height: @min-height;
+        max-width: 1024px;
+        background-color: rgba(255,255,255,.9);
+        border-left: @light-grey 1px solid;
+
+        article {
             width: 70%;
+            padding: 2em 1em 2em 2em;
+
+            h1 {
+                margin: 1.5em 0 0.75em;
+            }
+
+            h2.title { 
+                margin: 3em 0 0.75em 2em;
+            }
         }
-     }
-     section#posts blockquote {
-         width: 60%;
-     }
-     section#posts {
-         margin-left:25%;
-         width: 74%;
-         min-height: @min-height;
-         max-width: 1024px;
-         background-color: rgba(255,255,255,.9);
-         border-left: @light-grey 1px solid;
+    }
 
-         h1 {
-             margin: 1.5em 0 0.75em;
-         }
+    section#posts a.button_accent {
+        margin: 2em;
+    }
 
-         h2.title { 
-             margin: 3em 0 0.75em 2em;
-         }
+    section#posts ul.article-list{
+        padding: 1em 2.5em 2em 2em;
 
-     }
+        li {
+            line-height: 2.5em;
+            display: block;
+        }
 
-     section#posts a.button_accent {
-         margin: 2em;
-     }
+        dt {
+            display: inline;
+            color: @med-grey;
+            font-weight: lighter;
+            font-size: small;
+            vertical-align: top;
+        }
 
-     section#posts ul.article-list{
-         padding: 1em 2.5em 2em 2em;
+        dd {
+            display: inline-block;
+            margin-left: 1em;
+        }
 
-         li {
-             line-height: 2.5em;
-             display: block;
-         }
-
-         dt {
-             display: inline;
-             color: @med-grey;
-             font-weight: lighter;
-             font-size: small;
-             vertical-align: top;
-         }
-
-         dd {
-             display: inline-block;
-             margin-left: 1em;
-         }
-
-     }
-     section#posts dl ol {
-         margin: 0 0 0 1em;
-     }
+    }
+    section#posts dl ol {
+        margin: 0 0 0 1em;
+    }
 }
 
 @media screen and (max-width: 880px) {
