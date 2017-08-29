@@ -1,18 +1,13 @@
 # Pelican-svbtle
 
-This theme is a copy of a copy and is based on [Svbtle.com](http://www.svbtle.com).
-
-Originally ported to [Pelican](http://pelican.notmyidea.org) by [William Ting](https://github.com/wting/) - download the [repository](https://github.com/wting/pelican-svbtle) or read the original [README file](https://github.com/wting/pelican-svbtle#readme).
-
-Then [responsive adaptations](https://github.com/CNBorn/pelican-svbtle/tree/responsive) were made by [Tyler Xing(me)](https://github.com/CNBorn).
-
-Reorganized by [James Cooke](https://github.com/jamescooke).
-
 This is a adaptation specified for [Tyler Xing's Blog](http://cnborn.net).
 
-### FROM OFFICIAL REPO
+### BUILD
 
-Please refer to Pelican theme [install instructions](http://pelican.notmyidea.org/en/latest/pelican-themes.html).
+```bash
+npm install less -g
+make less
+```
 
 ## SETTINGS.PY
 
@@ -24,10 +19,13 @@ These are the Pelican global variables currently supported by the theme:
 - `DEFAULT_DATE_FORMAT = ('%b %d, %Y')`: suggested date format
 - `FEED_DOMAIN = SITEURL`
 
+## PLUGIN SUPPORT
+
+- `language` template for [pelican-langcategory](https://github.com/CNBorn/pelican-langcategory)
+
 ## MODIFICATION
 
 - Accent color can be changed by editing `@accent` in `./static/css/style.less`.
-
 - A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
 
 ## AUTHORS
